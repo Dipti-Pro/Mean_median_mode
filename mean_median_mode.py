@@ -1,9 +1,11 @@
 from collections import Counter
 import csv
 
+#function of mean
 def get_mean(total_weight, total_entries):
+    
     #Calculating Mean
-    mean = total_weight / total_entries
+    
     print(f"Mean (Average) is -> {mean:2f}")
 
 def get_median(total_entries, sorted_data):
@@ -13,7 +15,8 @@ def get_median(total_entries, sorted_data):
         median2 = float(sorted_data[total_entries//2 - 1])
         median = (median1 + median2) / 2
     else:
-        median = float(sorted_data[total_entries//2])
+        #here
+        
     print(f"Median is -> {median:2f}")
 
 def get_mode(sorted_data):
